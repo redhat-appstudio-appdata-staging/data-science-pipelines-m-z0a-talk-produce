@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ds-pipelines-scheduledworkflow
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads-stage/rhn-support-rmartine-tenant/data-science-pipelines/ds-pipelines-scheduledworkflow@sha256:ac1b9c337f18d4d90ee7578e105016bb11ec2933145ca2a869f1abe1cb43c650
         name: my-go
         ports:
         - containerPort: 8081
