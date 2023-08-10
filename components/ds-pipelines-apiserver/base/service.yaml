@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: ds-pipelines-apiserver
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ds-pipelines-apiserver
+    app.kubernetes.io/part-of: data-science-pipelines
+  name: ds-pipelines-apiserver
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: ds-pipelines-apiserver
+status:
+  loadBalancer: {}
