@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ds-pipelines-persistenceagent
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/rhn-support-rmartine-tenant/data-science-pipelines/ds-pipelines-persistenceagent@sha256:02b5765efd587713d730c586979cdc1a3530d7869793c4b2b023fb1951d8c413
+        name: my-go
+        resources: {}
+status: {}
