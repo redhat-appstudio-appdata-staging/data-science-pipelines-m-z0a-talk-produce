@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: ds-pipelines-persistenceagent
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ds-pipelines-persistenceagent
+    app.kubernetes.io/part-of: data-science-pipelines
+  name: ds-pipelines-persistenceagent
+spec:
+  ports:
+  - port: 8888
+    targetPort: 8888
+  selector:
+    app.kubernetes.io/instance: ds-pipelines-persistenceagent
+status:
+  loadBalancer: {}
