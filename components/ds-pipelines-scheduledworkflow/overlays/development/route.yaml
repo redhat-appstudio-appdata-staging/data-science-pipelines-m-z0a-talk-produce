@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: ds-pipelines-scheduledworkflow
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ds-pipelines-scheduledworkflow
+    app.kubernetes.io/part-of: data-science-pipelines
+  name: ds-pipelines-scheduledwor1bzj
+spec:
+  path: /
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: ds-pipelines-scheduledworkflow
+    weight: null
+status: {}

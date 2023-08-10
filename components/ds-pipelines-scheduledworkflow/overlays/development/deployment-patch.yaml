@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ds-pipelines-scheduledworkflow
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/rhn-support-rmartine-tenant/data-science-pipelines/ds-pipelines-scheduledworkflow@sha256:ac1b9c337f18d4d90ee7578e105016bb11ec2933145ca2a869f1abe1cb43c650
+        name: my-go
+        resources: {}
+status: {}
