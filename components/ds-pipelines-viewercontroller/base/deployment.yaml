@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ds-pipelines-viewercontroller
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads-stage/rhn-support-rmartine-tenant/data-science-pipelines/ds-pipelines-viewercontroller@sha256:3dad39a6609537c279f5f30230387da2eafce710fdffa0e3c481d36132465b23
         name: my-go
         ports:
         - containerPort: 8081
