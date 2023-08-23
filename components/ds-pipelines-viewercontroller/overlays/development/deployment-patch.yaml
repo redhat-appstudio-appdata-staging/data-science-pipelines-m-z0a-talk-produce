@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ds-pipelines-viewercontroller
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/rhn-support-rmartine-tenant/data-science-pipelines/ds-pipelines-viewercontroller@sha256:3dad39a6609537c279f5f30230387da2eafce710fdffa0e3c481d36132465b23
+        name: my-go
+        resources: {}
+status: {}
