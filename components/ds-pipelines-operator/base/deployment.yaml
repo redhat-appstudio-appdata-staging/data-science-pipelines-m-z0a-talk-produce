@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: ds-pipelines-operator
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads-stage/rhn-support-rmartine-tenant/data-science-pipelines/ds-pipelines-operator@sha256:33e446475fcc131be18801ddd260f6b2c5ffb384bc7b301f79a2192df002f223
+      - image: quay.io/redhat-user-workloads-stage/rhn-support-rmartine-tenant/data-science-pipelines/ds-pipelines-operator@sha256:0cbcc57c6de0279fdb6fd646feab51d450aebb089587bc881198c11cc9dc5554
         imagePullPolicy: Always
         name: container-image
         ports:
