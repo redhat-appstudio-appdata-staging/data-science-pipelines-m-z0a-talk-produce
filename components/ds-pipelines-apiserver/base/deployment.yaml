@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ds-pipelines-apiserver
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads-stage/rhn-support-rmartine-tenant/data-science-pipelines/ds-pipelines-apiserver@sha256:0b042db60e90d99144d7fc7edbdfe850be8b090ea1a2c56870f8db937c362771
+      - image: quay.io/redhat-user-workloads-stage/rhn-support-rmartine-tenant/data-science-pipelines/ds-pipelines-apiserver@sha256:694cd335362c9b7b0b5acc99f60959aabebe169489232534f9638371cbb1fb19
         name: my-go
         ports:
         - containerPort: 8081
