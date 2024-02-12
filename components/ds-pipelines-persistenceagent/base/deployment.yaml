@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: data-science-pipelines
   name: ds-pipelines-persistenceagent
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
