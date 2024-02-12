@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: data-science-pipelines
   name: ds-pipelines-apiserver
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
